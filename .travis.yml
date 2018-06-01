@@ -1,0 +1,20 @@
+language: android
+jdk:
+  - oraclejdk8
+android:
+  components:
+    - tools
+    - platform-tools
+    - tools
+    - build-tools-25.0.2
+    - android-25
+    - extra-android-support
+    - extra-android-m2repository
+before_install:
+- chmod +x gradlew
+- chmod +rx app
+skip_cleanup: true
+script:
+- export CI=true
+- export CI_NAME=travis-ci
+- ./gradlew jacocoTestReport
