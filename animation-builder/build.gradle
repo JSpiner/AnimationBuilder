@@ -1,4 +1,16 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.novoda.bintray-release'
+
+publish {
+    userOrg = 'JSpiner'
+    groupId = 'net.jspiner.animationbuilder'
+    artifactId = 'animationbuilder'
+    publishVersion = '0.0.1'
+    desc = 'https://github.com/JSpiner/AnimationBuilder'
+    website = 'https://github.com/JSpiner/AnimationBuilder'
+    issueTracker = "https://github.com/JSpiner/AnimationBuilder/issues"
+    repository = "https://github.com/JSpiner/AnimationBuilder.git"
+}
 
 android {
     compileSdkVersion 26
