@@ -1,4 +1,6 @@
 # AnimationBuilder
+ [ ![Download](https://api.bintray.com/packages/jspiner/maven/animationbuilder/images/download.svg) ](https://bintray.com/jspiner/maven/animationbuilder/_latestVersion)
+
 AnimationBuilder is easist way to make animation.
 
 # Useage
@@ -37,3 +39,8 @@ It provides several callbacks.
 - rotation animator
 - chaining animator
 - grouping animator
+
+# setup
+```
+    implementation 'net.jspiner.animationbuilder:animationbuilder:0.0.1'
+```
