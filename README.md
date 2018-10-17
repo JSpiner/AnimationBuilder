@@ -10,8 +10,8 @@ It is easy and powerful.
 AnimationBuilder.builder()
         .valueAnimator(0, 18500)
         .duration(300)
-        .interpolator(new DecelerateInterpolator)
-        .onUpdate(value -> binding.score.setText(numberFormat(value));)
+        .interpolator(new DecelerateInterpolator())
+        .onUpdate(value -> binding.score.setText(numberFormat(value)))
         .start();
 ```
 
